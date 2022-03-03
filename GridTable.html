@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridTable</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 6, 1fr;
+            grid-template-rows: 4, 1fr;
+            background-color: aqua;
+            border: 3px solid black;
+            height: 300px;
+            width: 600px;
+        }
+
+        .Header {
+            display: flex;
+            grid-column: 1/6;
+            grid-row: 1/2;
+            background-color: yellow;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 1/2;
+            grid-row: 2/4;
+            background-color: yellowgreen
+        }
+
+        .Menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 2/4;
+            grid-row: 2/3;
+            background-color: rgb(141, 141, 76);
+        }
+
+        .Right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 4/6;
+            grid-row: 2/3;
+            background-color: brown;
+        }
+
+        .Footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 2/6;
+            grid-row: 3/4;
+            background-color: blueviolet;
+        }
+
+        .GridContainer {
+            display: flex;
+            height: 80vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="GridContainer">
+        <div class="container">
+            <div class="Header">Header</div>
+            <div class="Main">Main</div>
+            <div class="Menu">Menu</div>
+            <div class="Right">Right</div>
+            <div class="Footer">Footer</div>
+        </div>
+    </div>    
+</html>
